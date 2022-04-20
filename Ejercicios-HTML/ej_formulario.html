@@ -18,26 +18,70 @@
     https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_output-->
 
 <h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
-Nombre:
-Apellido:
-Sexo: Masculino Femenino
-Edad:
-Email:
-Usuario:
-Password:
-Confirmar Password:
+<form id="form_subscripcion">
+    <p>
+        Nombre:
+        <label for="nombre"></label>
+        <input type="text" name="nombre" placeholder="Nombre" id="Nombre">
+    </p>
+    <p>
+        Apellido:
+        <label for="apellido"></label>
+        <input type="text" name="apellido" placeholder="Apellido" id="Apellido">
+    </p>
+    <p>
+        Sexo:
+        <input type="radio" name="sexo" value="Masculino"> Masculino
+        <input type="radio" name="sexo" value="Femenino"> Femenino
+    </p>
+    <p>
+        Edad:<input type="number" name="edad" placeholder="Edad">
+    </p>
+    <p>
+        Email:
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Email" id="Email">
+    </p>
+    <p>
+        Usuario:
+        <label for="user"></label>
+        <input type="text" name="user" placeholder="Usuario" id="user">
+    </p>
+    <p>
+        Password:
+        <label for="password"></label>
+        <input type="password" name="password" placeholder="Password" id="password" >
+    </p>
+    <p>
+        Confirmar Password:
+        <label for="confirmar_password"></label>
+        <input type="password" name="confirmar_password" placeholder="Confirmar_Password" id="confirmar_password">
+    </p>
+    <p>
 
-Tipo de servicio: Free / Standard / Premium
-Tema:
-Política
-Negocios
-Tecnología
-Salud
+        Tipo de servicio:
+        <select name="tipo_servicio">
+            <option>Free</option>
+            <option>Standard</option>
+            <option>Premium</option>
+        </select>
+    </p>
+    <p>
+        Tema:
+        <input type="checkbox" name="tema" value="Politica">Politica
+        <input type="checkbox" name="tema" value="Negocios">Negocios
+        <input type="checkbox" name="tema" value="Tecnologia">Tecnologia
+        <input type="checkbox" name="tema" value="Salud">Salud
+    </p>
+    <p>
+        Agregue un comentario:
+        <textarea>
 
-Agregue un comentario:
-
-Boton de Enviar
-
-
+        </textarea>
+    </p>
+    <p>
+        <button>Boton de Enviar </button>
+    </p>
+</form>
 </body>
 </html>
